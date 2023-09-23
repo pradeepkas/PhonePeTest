@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="467" id="KGk-i7-Jjw" customClass="MovieListCell" customModule="PhonePeTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="446" height="467"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="446" height="467"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Sxe-wV-T1r">
+                        <rect key="frame" x="10" y="10" width="426" height="442"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VRA-NA-6eF">
+                                <rect key="frame" x="0.0" y="0.0" width="426" height="284"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="VRA-NA-6eF" secondAttribute="height" multiplier="1.5" id="jTi-Al-n9Q"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="185" translatesAutoresizingMaskIntoConstraints="NO" id="OeW-Kr-s1G">
+                                <rect key="frame" x="0.0" y="294" width="426" height="47.333333333333314"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cRt-hC-5sg">
+                                        <rect key="frame" x="0.0" y="0.0" width="186" height="47.333333333333336"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="movie name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPF-Mg-lbY">
+                                                <rect key="frame" x="0.0" y="0.0" width="186" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="255" text="Rating: 7.4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zhh-Ye-q8L">
+                                                <rect key="frame" x="0.0" y="30.333333333333314" width="186" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rBX-aB-wuL">
+                                        <rect key="frame" x="371" y="0.0" width="55" height="47.333333333333336"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="55" id="R4G-cT-IgV"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="star"/>
+                                        <connections>
+                                            <action selector="movieStarButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="9RS-Er-3dE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Playlists" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PMR-sA-sxD">
+                                <rect key="frame" x="0.0" y="351.33333333333331" width="426" height="90.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Sxe-wV-T1r" secondAttribute="trailing" constant="10" id="OWn-A5-1oR"/>
+                    <constraint firstAttribute="bottom" secondItem="Sxe-wV-T1r" secondAttribute="bottom" constant="15" id="ddD-6Q-U7T"/>
+                    <constraint firstItem="Sxe-wV-T1r" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="gNh-d0-a4D"/>
+                    <constraint firstItem="Sxe-wV-T1r" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="vLV-lw-0Ja"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="movieImage" destination="VRA-NA-6eF" id="GdD-N5-OoO"/>
+                <outlet property="movieName" destination="QPF-Mg-lbY" id="wan-a8-782"/>
+                <outlet property="playlists" destination="PMR-sA-sxD" id="mlm-Ag-Xox"/>
+                <outlet property="rating" destination="Zhh-Ye-q8L" id="5DV-ge-yvB"/>
+                <outlet property="starButton" destination="rBX-aB-wuL" id="Orn-Do-N8i"/>
+            </connections>
+            <point key="canvasLocation" x="201.52671755725191" y="170.77464788732397"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="star" width="24" height="24"/>
+    </resources>
+</document>
